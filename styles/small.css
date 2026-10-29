@@ -1,0 +1,279 @@
+/****** COLOR ******/
+:root {
+    --color-primary: #517492;
+    --color-secondary: #faf7ed;
+    --color--tertiary: #761113;
+    --color-fourth: #062E4B;
+    /* grey scale */
+    --color-greyscale-05: lab(98% 0 0);
+    --color-greyscale-10: lab(97% 0 0);
+    --color-greyscale-20: lab(91% 0 0);
+    --color-greyscale-30: lab(85% 0 0);
+    --color-greyscale-40: lab(66% 0 0);
+    --color-greyscale-50: lab(48% 0 0);
+    --color-greyscale-60: lab(34% 0 0);
+    --color-greyscale-70: lab(27% 0 0);
+    --color-greyscale-80: lab(15% 0 0);
+    --color-greyscale-90: lab(8% 0 0);
+    --color-greyscale-95: lab(5% 0 0);
+
+
+}
+
+
+/****** BORDER BOX ******/
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway";
+}
+
+/****** HEADER ******/
+header {
+    padding: 10px 0 10px 10px;
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    column-gap: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: #517492;
+    color: var(--color-secondary);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0.5px;
+}
+
+
+/****** Navigation ******/
+
+nav {
+    display: none;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+nav.show {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 0;
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: color .2s ease, border-color .2s ease;
+}
+
+nav a:hover {
+    color: #111827;
+}
+
+/* Active page */
+nav .active a {
+    color: #111827;
+    border-bottom: 3px solid var(--color-primary);
+}
+
+/****** HAMBURGER ******/
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+}
+
+/* H2 */
+h2 {
+  text-align: left;
+  padding: 10px;
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+/* PRESIDENT GALLERY LAYOUT */
+
+#showPresidents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* PRESIDENT CARD */
+
+#showPresidents section {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+  transition: all .3s ease;
+}
+
+#showPresidents section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+}
+
+
+/* PRESIDENTS */
+
+#showPresidents h2 {
+  margin: .75rem 0;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+#showPresidents p {
+  margin: .25rem 0;
+  color: #555;
+  font-size: .95rem;
+}
+
+/* IMAGES */
+
+#showPresidents img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid white;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+  margin-bottom: .75rem;
+}
+
+
+/* PARTY COLORS */
+
+.Democratic {
+  background: #DBEAFE !important;
+  border-left: 10px solid #0015BC;
+}
+
+.Republican {
+  background: #FEE2E2 !important;
+  border-left: 10px solid #E9141D;
+}
+
+.Democratic-Republican {
+  background: #EDE9FE !important;
+  border-left: 10px solid #6B46C1;
+}
+
+.Whig {
+  background: #FED7AA !important;
+  border-left: 10px solid #F59E0B;
+}
+
+.Federalist {
+  background: #DCFCE7 !important;
+  border-left: 10px solid #15803D;
+}
+
+.Independent {
+  background: #E5E7EB !important;
+  border-left: 10px solid #6B7280;
+}
+
+
+
+/* PARTY BUTTONS */
+
+.partyNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.partyNav button {
+  border: none;
+  padding: .75rem 1.25rem;
+  border-radius: 999px;
+  background: #f4f4f4;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .2s ease;
+}
+
+.partyNav button:hover {
+  transform: translateY(-2px);
+  background: #e5e7eb;
+}
+
+.partyNav .current {
+  background: var(--color-primary);
+  color: white;
+}
+
+
+
+
+
+/****** SOCIAL ******/
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social img {
+    display: block;
+    width: 22px;
+    height: auto;
+}
+
+.social a {
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-greyscale-10);
+}
+
+.social a:hover {
+    background-color: var(--color-greyscale-20);
+}
+
+
+/****** FOOTER ******/
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    justify-content: center;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
