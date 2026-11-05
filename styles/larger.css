@@ -9,13 +9,18 @@
 
     /****** HEADER ******/
     header {
-        grid-template-columns: 1fr auto;
+        grid-template-columns: auto 1fr auto;
         padding: 10px 20px;
+    }
+
+    header img {
+        width: 131px;
     }
 
     header span {
         white-space: normal;
-        text-overflow: unset;
+        text-align: left;
+        font-size: 1.1rem;
     }
 
     /****** Navigation ******/
