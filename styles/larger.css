@@ -1,4 +1,6 @@
 @media only screen and (min-width: 40rem) {
+
+
     header,
     main,
     nav,
@@ -6,50 +8,35 @@
         max-width: 1200px;
         margin: 0 auto;
     }
-
-    /****** HEADER ******/
-    header {
-        grid-template-columns: auto 1fr auto;
-        padding: 10px 20px;
-    }
-
-    header img {
-        width: 131px;
-    }
-
-    header span {
-        white-space: normal;
-        text-align: left;
-        font-size: 1.1rem;
-    }
-
     /****** Navigation ******/
-    nav {
-        display: block !important;
+nav {
+        display: block;
     }
-
     nav ul {
-        flex-direction: row;
-        padding: 0;
+        display: flex;
+        margin-left: 10px;
+    }
+    nav a {
+      border: none;
     }
 
-    /****** HAMBURGER ******/
-    .hamburger {
+    /****** Schedule ******/
+.schedule {
+    font-size: 1rem;
+}
+.schedule img {
+    width: 150px;
+}
+
+
+     /****** HAMBURGER ******/
+     .hamburger {
         display: none;
     }
 
     /****** MAIN ******/
-    .sbs {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    /****** Schedule ******/
-    .schedule {
-        font-size: 1rem;
-    }
-
-    .schedule img {
-        width: 150px;
-    }
+.sbs {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 }
