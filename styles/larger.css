@@ -12,7 +12,6 @@
     /****** HEADER ******/
     header {
         grid-template-columns: 24px auto;
-        align-items: center;
     }
 
     header img {
