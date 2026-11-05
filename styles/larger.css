@@ -8,6 +8,11 @@
         max-width: 1200px;
         margin: 0 auto;
     }
+
+        /****** Header ******/
+    header {
+    grid-template-columns: 24px auto 44px;
+}
     /****** Navigation ******/
 nav {
         display: block;
