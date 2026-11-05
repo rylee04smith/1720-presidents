@@ -34,11 +34,11 @@ body {
 header {
     padding: 10px;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     column-gap: 8px;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     background-color: #517492;
     color: var(--color-secondary);
     overflow-x: hidden;
@@ -46,14 +46,14 @@ header {
 
 header img {
     display: block;
-    width: 131px;
+    width: 80px;
     height: auto;
 }
 
 header span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 5px;
 }
 
 /****** Navigation ******/
