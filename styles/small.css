@@ -32,16 +32,15 @@ body {
 
 /****** HEADER ******/
 header {
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
     column-gap: 8px;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.1rem;
     background-color: #517492;
     color: var(--color-secondary);
-    overflow-x: hidden;
 }
 
 header img {
