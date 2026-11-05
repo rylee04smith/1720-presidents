@@ -52,7 +52,6 @@ header img {
 }
 
 header span {
-    text-align: center;
     font-size: 1rem;
     padding: 0 5px;
 }
@@ -70,26 +69,33 @@ nav.show {
 
 nav ul {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0;
+}
+
+nav li {
+    width: 100%;
 }
 
 nav a {
     display: block;
-    padding: 1rem 0;
+    width: 100%;
+    padding: 1rem;
     color: #4b5563;
     text-align: center;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    border-bottom: 3px solid transparent;
-    transition: color .2s ease, border-color .2s ease;
+    border-bottom: 1px solid #e5e7eb;
+    transition: color .2s ease, background-color .2s ease;
 }
 
 nav a:hover {
     color: #111827;
+    background-color: #f9fafb;
 }
 
 /* Active page */
@@ -97,6 +103,7 @@ nav .active a {
     color: #111827;
     border-bottom: 3px solid var(--color-primary);
 }
+
 
 /****** HAMBURGER ******/
 .hamburger {
