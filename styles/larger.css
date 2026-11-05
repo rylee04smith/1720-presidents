@@ -25,19 +25,28 @@
         font-size: 1.1rem;
     }
 
-    /****** NAVIGATION ******/
-    nav {
-        display: block;
-    }
+  /****** NAVIGATION ******/
+nav {
+    display: block;
+}
 
-    nav ul {
-        display: flex;
-        margin-left: 10px;
-    }
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
 
-    nav a {
-        border: none;
-    }
+nav li {
+    width: auto;
+}
+
+nav a {
+    border: none;
+    padding: 1rem;
+}
 
     /****** HAMBURGER ******/
     .hamburger {
