@@ -1,0 +1,50 @@
+@media only screen and (min-width: 40rem) {
+
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    /****** Navigation ******/
+nav {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        margin-left: 10px;
+    }
+    nav a {
+      border: none;
+    }
+
+    /****** Schedule ******/
+.schedule {
+    font-size: 1rem;
+}
+.schedule img {
+    width: 150px;
+}
+
+
+     /****** HAMBURGER ******/
+     .hamburger {
+        display: none;
+    }
+
+    /****** MAIN ******/
+.sbs {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+}
+
+
+
+
+
+
+  
+
